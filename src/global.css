@@ -1,0 +1,22 @@
+/* Dark mode (initial) */
+body.dark-mode {
+    background-color: #1d1836;
+    color: white;
+  }
+  
+  /* Light mode */
+  body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Smooth transition when toggling between themes */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Ensure all elements transition smoothly */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

@@ -1,0 +1,184 @@
+.project-container {
+  color: #fff;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.title-section {
+  margin: 0;
+  padding: 0;
+}
+
+.project-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 70%;
+  height: 500px;
+  color: #fff;
+  border-radius: 10px;
+  flex-direction: row; 
+}
+
+.project-image {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content p {
+  width: 200px;
+}
+
+.project-heading {
+  font-weight: bold;
+}
+
+.project-description {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.project-button {
+  background-color: #918fe2;
+  color: white;
+  text-transform: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.left-arrow, .right-arrow {
+  /* display: flex; */
+  height: 3rem;
+  width: 3rem;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: #918fe2;
+}
+
+@media (max-width: 1200px) {
+  .project-card {
+    width: 90%; 
+    height: auto; 
+  }
+
+  .project-image {
+    width: 300px; 
+    height: 200px;
+  }
+  .carousel-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; 
+    width: 100%;
+    gap: 1.5rem; 
+  }
+
+  .project-image {
+    width: 250px; 
+    height: 180px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .carousel-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    width: 100%; 
+    gap: 1rem; 
+  }
+
+  .project-image {
+    width: 200px; 
+    height: 150px;
+  }
+
+  .project-content p {
+    font-size: 0.9rem; 
+  }
+
+  .project-button {
+    padding: 0.5rem 1rem; 
+  }
+
+  .dots-container {
+    margin-top: 0.5rem; 
+  }
+
+  .dot {
+    width: 6px; 
+    height: 6px;
+  }
+}
