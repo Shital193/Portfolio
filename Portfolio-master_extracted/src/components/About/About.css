@@ -1,0 +1,129 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  margin-top: 6rem;
+}
+
+.aboutTitle {
+  text-align: center;
+}
+
+.aboutTitle h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.aboutTitle p {
+  font-size: 0.8rem;
+  color: #BCBAC4;
+}
+
+.aboutIntro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+.image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+
+.image img:hover {
+  transform: translateZ(20px); /* 3D effect pushing the image down on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.intro {
+  max-width: 350px;
+}
+
+.intro p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #BCBAC4;
+}
+
+.resumeButton {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.5rem;
+  background-color: #6E57E0;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  max-width: 150px;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+}
+
+.resumeButton:hover {
+  background-color: #514dc1;
+}
+
+.resumeButton span, .resumeButton img {
+  background-color: transparent;
+  color: white;
+}
+
+.resumeButton img {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .image img {
+      width: 250px;  /* Smaller image size below 1200px */
+      height: 250px;
+  }
+  .resumeButton{
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutIntro {
+      flex-direction: column;  /* Stack image and intro vertically */
+      align-items: center;      /* Center alignment */
+      gap: 2rem;                /* Adjust gap between stacked items */
+  }
+  
+  .image img {
+      width: 200px;  /* Further reduce image size below 480px */
+      height: 200px;
+  }
+
+  .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;/* Allow intro text to utilize more width on small screens */
+      text-align: center; /* Center align text for better readability */
+  }
+  .resumeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    text-decoration: none;
+  }
+}

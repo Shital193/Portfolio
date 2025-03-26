@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    letter-spacing: 0.05rem;
+    position: fixed; 
+    width: 100%;    
+    top: 0;
+    z-index: 1000;   
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .name {
+    display: flex;
+    font-size: 1.2rem;
+    ::hover{
+        color: #6E57E0;
+    }
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .optionlist {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav_link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav_link:hover {
+    color: #6E57E0; 
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon img {
+    width: 1.1rem;
+    height: 1.1rem;
+    transition: filter 0.3s ease;
+  }
+  .icon img:hover {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(100%) saturate(7487%) hue-rotate(240deg) brightness(94%) contrast(108%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; 
+      padding: 15px; 
+      position: fixed;
+      max-height: fit-content;
+    }
+
+    .name h4{
+      font-size: 1rem;
+    }
+
+    .optionlist {
+      display: flex;
+      gap: 1rem; 
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+  
+    .nav_link {
+      font-size: 0.7rem; 
+    }
+
+    @media (max-width: 480px) {
+      .navbar{
+        flex-direction: column; 
+        padding: 5px; 
+        position: relative;
+        max-height: fit-content;
+      }
+      
+      .optionlist {
+        display: flex;
+        gap: 1rem; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+      }
+    }
+  }
+  
